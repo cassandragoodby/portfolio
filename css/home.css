@@ -1,0 +1,312 @@
+body{
+	background: white;
+	margin: 0px;
+	padding: 0px;
+	border: 10px solid black;
+}
+
+header{
+	padding: 10px;
+	cursor: pointer;
+}
+
+#headerlogo{
+	width: 100px;
+	display: inline;
+	float: left;
+	padding: 5px;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+#headertext{
+	padding-left: 15px;
+	display: inline;
+	float: left;
+}
+
+nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: absolute;
+	right: 50px;
+	margin-top: 10px;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	padding-left: 35px;
+}
+
+nav a:hover{
+	color: grey;
+}
+
+.workhead{
+	width: 60%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 150px;
+}
+
+.content{
+	width: 55%;
+	margin-left: 50%;
+	min-width: 650px;
+	transform: translateX(-50%);
+	border: 5px solid black;
+	padding: 10px 30px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	height: 200px;
+	visibility: visible;
+}
+
+.hovering{
+	-webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}* {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.contentleft{
+	width: 55%;
+	min-width: 650px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border: 5px solid black;
+	padding: 10px 30px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	height: 200px;
+	text-align: right;
+	visibility: visible;
+}
+
+.worktitle{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.worksubtitle, .workclasses{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+.workclasses{
+	font-weight: 300;
+}
+
+.projectimgright{
+	width: 400px;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+}
+
+.projectimgleft{
+	width: 400px;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#hamburgermenu{
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+span{
+	display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#icons{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+i{
+	margin: 0px 10px 0px 10px;
+}
+
+i:hover{
+	color: grey;
+}
+
+@media only screen and (max-width: 850px) {
+    /*Hamburger menu*/
+    h1{
+    	padding-top: 5px;
+    	font-size: 20px;
+    }
+    
+    h2{
+    	font-size: 15px;
+    }
+
+    #headerlogo{
+		width: 80px;
+	}
+
+	.content, .contentleft,.contentright{
+		max-width: 300px;
+		min-width: 250px;
+		/*margin-top: 10px;*/
+		padding-bottom: 50px;
+		height: 120px;
+		z-index: -1;
+	}
+	.projectimgleft,.projectimgright{
+		width: 340px;
+		top: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: -1;
+	}
+
+	.hovering{
+		-webkit-filter: blur(2px);
+		filter: blur(2px);
+		opacity: 0;
+		background-color: white;
+	}
+
+	.worktitle{
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.worktitle:hover{
+		/*visibility: visible;*/
+		font-size: 20px;
+		z-index: 20;
+	}
+
+	.worksubtitle, .workclasses{
+		visibility: hidden;
+	}
+
+	.worksubtitle:hover, .workclasses:hover{
+		/*visibility: visible;*/
+		font-size: 15px;
+		z-index: 20;
+	}
+
+	#headertext{
+		padding-left: 0px;
+	}
+}
+
+/*Hamburger Menu*/
+@media only screen and (max-width: 650px) {
+	#hamburgermenu{
+		visibility: visible;
+	}
+
+	nav{
+		display: block;
+		width: 80px;
+		margin: 0;
+		text-align: right;
+		top: 35px;
+		right: 5px;
+		padding: 35px 15px 15px 15px;
+		visibility: hidden;
+	}
+
+	nav a{
+		padding: 0px;
+		line-height: 30px;
+	}
+
+
+	input:checked ~ span
+	{
+	  opacity: 1;
+	  transform: rotate(45deg) translate(-17.5px, -20px);
+	  background: #232323;
+	}
+
+	input:checked ~ span:nth-last-child(3)
+	{
+	  opacity: 0;
+	  transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	input:checked ~ span:nth-last-child(2)
+	{
+	  transform: rotate(-45deg) translate(0, -0px);
+	}
+}

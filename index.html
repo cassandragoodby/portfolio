@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129650699-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-129650699-1');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassandra Goodby</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <script src="js/home.js"></script>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <a href="index.html">
+        <header>
+    		<img src="img/portfolioBracket.png" alt="logo" id="headerlogo">
+    		<div id="headertext">
+    			<h1>Cassandra Goodby</h1>
+    			<h2>Designer & Developer</h2>
+    		</div>
+        </header>
+    </a>
+    <div id="hamburgermenu">
+        <input type="checkbox" id="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    
+    <nav>
+    	<a href="index.html">Work</a>
+  		<a href="about.html">About</a>
+  		<!-- <a href="resume.html">Resume</a> -->
+    </nav>
+    <div id="body">
+    	<div class="workhead">
+    		<h3>Work</h3>
+    	</div>
+    	
+    	<div class="content" id="work1">
+    		<a href="befit.html">
+                <img src="img/befit.png" alt="Project 1 Img" class="projectimgright" id="proj1img">
+	    		<p class="worktitle proj1text">Be Fit Bingo</p>
+	    		<p class="worksubtitle proj1text">A Fitness App</p>
+	    		<p class="workclasses proj1text">Prototyping | Wireframing<br>Information Architecture | Research</p>
+	    		</a>
+    	</div>
+
+	    
+    	<div class="contentleft" id="work2">
+    		<a href="custime.html">
+                <img src="img/custime.png" alt="Project 1 Img" class="projectimgleft" id="proj2img">
+	    		<p class="worktitle proj2text">Custime</p>
+	    		<p class="worksubtitle proj2text">A customizable timer for HIIT workouts</p>
+	    		<p class="workclasses proj2text">User Interfacing |  User Research<br>IOS Swift | Android Java</p>
+    		</a>
+    	</div>
+	    
+	    
+    	<div class="content" id="work3">
+    		<a href="nist.html">
+                <img src="img/nist.png" alt="Project 1 Img" class="projectimgright"  id="proj3img">
+	    		<p class="worktitle proj3text">NIST Internship</p>
+	    		<p class="worksubtitle proj3text">PREP Fellow Internship<br>Public Safety Communications<br>Research Division Kiosk</p>
+	    		<p class="workclasses proj3text">Research | User Interface<br>User Experience | Development</p>
+    		</a>
+    	</div>
+	    
+    </div>
+
+    <footer>
+        <div id="icons">
+            <a href="https://github.com/cassandragoodby" target="_blank">
+            <i class="fab fa-github fa-2x foot"></i></a>
+            <a href="https://www.linkedin.com/in/cassandragoodby/" target="_blank"><i class="fab fa-linkedin-in fa-2x foot" ></i></a>
+            <a href="mailto:cassandragoodby@gmail.com"><i class="fas fa-envelope fa-2x foot" ></i></a>
+        </div>
+    </footer>
+
+    <script>
+        $("input").change(function(){
+            var $input = $( this );
+            if($input.prop( "checked" )){
+                $("nav").css("visibility","visible");
+            }
+            else{
+                $("nav").css("visibility","hidden");
+            }
+        });
+    </script>
+</body>
+</html>
