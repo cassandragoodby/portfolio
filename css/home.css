@@ -37,6 +37,7 @@ h2{
 	padding-left: 15px;
 	display: inline;
 	float: left;
+	max-width: 50%;
 }
 
 nav{
@@ -216,7 +217,7 @@ i:hover{
     }
 
     #headerlogo{
-		width: 80px;
+		width: 50px;
 	}
 
 	.content, .contentleft,.contentright{
@@ -266,6 +267,12 @@ i:hover{
 
 	#headertext{
 		padding-left: 0px;
+		padding-top: 10px;
+	}
+	#headertext h1, #headertext h2{
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
 	}
 }
 
