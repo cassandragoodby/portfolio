@@ -37,6 +37,7 @@ h2{
 	padding-left: 15px;
 	display: inline;
 	float: left;
+	max-width: 50%;
 }
 
 nav{
@@ -215,7 +216,7 @@ i:hover{
     }
 
     #headerlogo{
-		width: 80px;
+		width: 50px;
 	}
 
 	.projectimgleft,.projectimgright{
@@ -257,6 +258,8 @@ i:hover{
 
 	#headertext{
 		padding-left: 0px;
+		font-size: 12px;
+
 	}
 }
 
