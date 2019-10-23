@@ -2,7 +2,7 @@ body{
 	background: white;
 	margin: 0px;
 	padding: 0px;
-	border: 10px solid black;
+	/*border: 10px solid black;*/
 }
 
 header{
@@ -100,7 +100,7 @@ a{
 	margin-bottom: 40px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
-	height: 380px;
+	/*height: 380px;*/
 }
 
 .abouttext p{
@@ -110,8 +110,92 @@ a{
 #aboutpic{
 	width: 300px;
 	position: absolute;
-	top: -30px;
+	/*top: -30px;*/
 	right: -40px;
+}
+
+.resume{
+	padding: 0px 120px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.resume h4{
+	/*text-decoration: underline;*/
+	border-bottom: 5px black solid;
+	font-size: 18px;
+}
+
+.resume h5{
+	font-size: 16px;
+	font-weight: 700;
+	margin: 5px 0px;
+	padding-top: 10px;
+}
+
+.title{
+	font-size: 16px;
+	font-weight: 700;
+	margin: 5px 0px;
+	float: left;
+}
+.company{
+	font-size: 14px;
+	font-weight: 700;
+	/*margin: 5px 0px;*/
+	clear: left;
+}
+
+.fellow{
+	float: left;
+	margin: 5px 0px;
+	font-size: 14px;
+}
+
+ul{
+	float: left;
+	margin: 5px 0px;
+	font-size: 12px;
+}
+ul li{
+	margin-top: 5px;
+}
+
+.section{
+	margin-top: 20px;
+	overflow: auto;
+}
+
+.preg{
+	font-size: 15px;
+	float: left;
+	margin: 5px 0px;
+}
+
+.pleft{
+	float: right;
+	font-size: 15px;
+	font-weight: 300;
+	color: grey;
+	margin: 5px 0px;
+}
+
+.left{
+	float: left;
+	width: 29%;
+	text-align: right;
+	padding: 10px;
+}
+
+.right{
+	width: 65%;
+	padding: 10px;
+	float: right;
+
+}
+
+footer{
+	margin-top: 50px;
+	clear: both;
 }
 
 #icons{
@@ -199,7 +283,7 @@ span{
  	margin-left: 50%;
  	transform: translateX(-50%);
  	font-weight: 700;
- 	margin-bottom: 40px;
+ 	margin-bottom: 10px;
  }
 
  #resumeSec{
@@ -263,6 +347,28 @@ span{
  	font-weight: 700;
  }
 
+ .skillssection{
+ 	float: right;
+ 	width: 100%;
+ 	text-align: right;
+ 	overflow: auto;
+ 	padding-bottom: 10px;
+ }
+
+ .skilltitle{
+ 	font-size: 16px;
+ 	font-weight: 700;
+ 	clear: right;
+ 	text-align: right;
+ 	margin: 5px 0px;
+ 	padding-top: 5px;
+ 	
+ }
+
+ .skillssection ul{
+ 	 float: right;
+ }
+
 
 @media only screen and (max-width: 850px) {
     /*Hamburger menu*/
@@ -306,9 +412,41 @@ span{
 	}
 
 }
+/*resume correct*/
+@media only screen and (max-width: 1000px) {
+	.resume{
+		padding: 0px 100px;
+	}
+
+	.right{
+		clear: both;
+		width: 100%;
+	}
+
+	.left{
+		clear: both;
+		width: 100%;
+		text-align: left;
+	}
+
+	.skillssection, .skilltitle{
+		clear: both;
+		text-align: left;
+	}
+
+	 .skillssection ul{
+		clear: both;
+		float: left;
+		padding: 0px;
+	}
+}
 
 /*Hamburger Menu*/
 @media only screen and (max-width: 650px) {
+	.resume{
+		padding: 0px 10px;
+	}
+
 	#hamburgermenu{
 		visibility: visible;
 	}

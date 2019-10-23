@@ -77,4 +77,21 @@ $(document).ready(function(){
 			$(".proj3text").css("visibility","hidden");
 			}
 	});
+	$("#work4").hover(function() {
+		$("#proj4img").addClass("hovering");
+		$(".proj4text").addClass("proj4texthover");
+		$(".proj4text").removeClass("proj4textnon");
+		if ($(window).width() < 850) {
+			$(".proj4text").css("visibility","visible");
+		}
+	});
+
+	$("#work4").mouseleave(function() {
+		$("#proj4img").removeClass("hovering");
+		$(".proj4text").addClass("proj4textnon");
+		$(".proj4text").removeClass("proj4texthover");
+		if ($(window).width() < 850) {
+			$(".proj4text").css("visibility","hidden");
+			}
+	});
 });
