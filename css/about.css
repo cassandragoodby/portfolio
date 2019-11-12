@@ -91,6 +91,7 @@ a{
 
 .abouttext{
 	width: 55%;
+	max-width: 630px;
 	margin-left: 50%;
 	min-width: 600px;
 	transform: translateX(-50%);
