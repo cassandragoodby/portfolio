@@ -118,13 +118,13 @@ ul a {
 /*                              BEGIN RESPONSIVE                              */
 @media only screen and (max-width: 600px) {
   #header img {
-    max-width: 50px; }
+    max-width: 30px; }
 
   h1 {
-    font-size: 20px; }
+    font-size: 15px; }
 
   h2 {
-    font-size: 15px; }
+    font-size: 10px; }
 
   #headertext {
     padding-left: 5px; }
@@ -711,6 +711,15 @@ footer {
     display: inline-block;
     text-align: center; } }
 @media only screen and (max-width: 700px) {
+  h3{
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .header{
+    padding: 5px;
+  }
+
   .sectionwide, .centeredSec, .sectionwideforms {
     width: 90%; }
 
