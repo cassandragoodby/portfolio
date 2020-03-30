@@ -8,23 +8,13 @@ $podysseyblue: #CEE5FF;
 $nistblue: #3475AB;
 $moodiqorange: #F09E13;
 
-@font-face {
-  font-family: raleway;
-  src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
-  font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-@font-face {
-  font-family: roboto;
-  src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
-  font-weight: bold;
-}
 
-@font-face {
-  font-family: abril fatface;
-  src: url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
-  font-weight: bold;
-}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 html, body {
 	margin: 0;
@@ -37,7 +27,7 @@ html, body {
 nav{
 	padding: 20px;
 	text-align: right;
-	font-family: "raleway", serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 15px;
 }
@@ -74,19 +64,19 @@ header img{
 }
 
 h1{
-	font-family: "raleway", serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 }
 
 h2{
-	font-family: "roboto", serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 25px;
 }
 
 h2 span{
-	font-family: "abril fatface", serif;
+	font-family: 'Abril Fatface', cursive;
 }
 
 #header a{
