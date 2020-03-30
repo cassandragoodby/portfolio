@@ -133,6 +133,10 @@ ul a {
     font-size: 12px;
     padding: 25px 15px; }
 
+    #nav-placeholder nav a {
+      padding: 10px;
+    }
+
   .aboutmain {
     display: inline-block; }
 
