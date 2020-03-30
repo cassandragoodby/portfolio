@@ -133,9 +133,8 @@ ul a {
     font-size: 12px;
     padding: 25px 15px; }
 
-    #nav-placeholder nav a {
-      padding: 10px;
-    }
+  #nav-placeholder nav a {
+    padding: 10px; }
 
   .aboutmain {
     display: inline-block; }
@@ -715,15 +714,6 @@ footer {
     display: inline-block;
     text-align: center; } }
 @media only screen and (max-width: 700px) {
-  h3{
-    margin: 0px;
-    font-size: 20px;
-  }
-
-  .header{
-    padding: 5px;
-  }
-
   .sectionwide, .centeredSec, .sectionwideforms {
     width: 90%; }
 
