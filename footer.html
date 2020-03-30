@@ -1,0 +1,59 @@
+<footer>
+	<div class="nextprojects">
+		<div class="project1"></div>
+		<div class="project2"></div>
+		<div class="project3"></div>
+	</div>
+	<div class="builtby">
+		<img src="img/portfolioBracket.png" alt="logo" id="footerlogo">
+			    		<div id="footertext">
+			    			<p class="footer1">Designed <span class="ampersand">&</span> Built</p>
+			    			<p class="footer2">By Cassandra Goodby</p>
+			    		</div>
+	</div>
+	
+</footer>
+
+<script>
+	var pathname = window.location.pathname;
+	  // console.log(pathname);
+	  if(pathname == "/lynx.html"){
+		  $('.project1').html("<a href='podyssey.html'><img src='../img/footer/PodysseyFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project2').html("<a href='moodiq.html'><img src='../img/footer/MoodIQFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project3').html("<a href='nistar.html'><img src='../img/footer/NISTArFooter.png' alt='Link to Podyssey case study'> </>");
+		 
+		}
+		else if(pathname == "/moodiq.html"){
+			$('.project1').html("<a href='lynx.html'><img src='../img/footer/LynxFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project2').html("<a href='podyssey.html'><img src='../img/footer/PodysseyFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project3').html("<a href='nistar.html'><img src='../img/footer/NISTArFooter.png' alt='Link to Podyssey case study'> </>");
+
+		}
+		else if(pathname == "/nistar.html"){
+			$('.project1').html("<a href='lynx.html'><img src='../img/footer/LynxFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project2').html("<a href='podyssey.html'><img src='../img/footer/PodysseyFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project3').html("<a href='moodiq.html'><img src='../img/footer/MoodIQFooter.png' alt='Link to Podyssey case study'> </>");
+			
+		}
+		else if(pathname == "/podyssey.html"){
+			$('.project1').html("<a href='lynx.html'><img src='../img/footer/LynxFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project2').html("<a href='moodiq.html'><img src='../img/footer/MoodIQFooter.png' alt='Link to Podyssey case study'> </>");
+		  $('.project3').html("<a href='nistar.html'><img src='../img/footer/NISTArFooter.png' alt='Link to Podyssey case study'> </>");
+			
+		}
+
+// windowsize/3 +0.52
+
+var windowsize = $(window).width();
+var footerdivsize = (windowsize/3)*0.52;
+console.log(footerdivsize);
+var footimagediv = $('.nextprojects');
+
+$(window).load(function() {
+		if(footerdivsize != 0){
+			footimagediv.css('height', footerdivsize);
+		}
+	});
+
+	
+</script>

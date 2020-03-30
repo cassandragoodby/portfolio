@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129650699-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lynx Portfolio Page</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/output.css">
 
-      gtag('config', 'UA-129650699-1');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cassandra Goodby</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon.png">
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
     <link rel="manifest" href="img/favicon//site.webmanifest">
@@ -25,134 +18,228 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    <a href="index.html">
-        <header>
-    		<img src="img/portfolioBracket.png" alt="logo" id="headerlogo">
-    		<div id="headertext">
-    			<h1>Cassandra Goodby</h1>
-    			<h2>Designer & Developer</h2>
-    		</div>
-        </header>
-    </a>
-    <nav>
-    	<a href="index.html">Work</a>
-  		<a href="about.html">About</a>
-        <a href="additionalWork.html">Additional Work</a>
-  		<!-- <a href="resume.html">Resume</a> -->
-    </nav>
-    <div id="body">
-        <div class="projhead">
-         <img src="img/Lynx/LynxHead.png" alt="NIST PSCR Kiosk">   
-        </div>
-        <div class="projectbody">
-            <h3>Overview</h3>
-            <p class="title">Introduction</p>
-            <p class="content">This project was created during my graduate-level User-Experience Design Course. The goal of this project was to create a mobile application experience. </p>
-            <p class="title">Tools</p>
-            <p class="content">Sketch, Principle, Photoshop, Illustrator, After Effects</p>
-            <p class="title">Duration</p>
-            <p class="content">Semester- Spring 2019</p>
-            <p class="titlebig">Process</p>
-            <p class="title">Objective</p>
-            <p class="content">All apps curate music experiences towards the single user, but fail to focus on the users, the collaborative experience music can curate is missed through Spotify, Apple Music, Pandora and all popular music streaming service. <br><br>
-            The goal of this project was to create an application that allows users to experience music together. To allow users to have the speaker experience with friends through their individual headphones.<br><br>The solution, Lynx is a collaborative music sharing experience that integrates collaborative playlist creation, in sync real-time experience and walkie talkie chat communication function.</p>
-            <p class="title">User Research</p>
-            <div class="sidebyside">
-                <div class="column">
-                    <img id="sidebysideimgleft" src="img/Lynx/SkiInterview2.jpg" alt="User Interview Skiing" id="skiInterview">
-                </div>
-                <div class="column">
-                    <img id="sidebysideimgright" src="img/Lynx/SnowShoeInterview.png" alt="User Interview SnowShoe" id="snowshoeInterview">
-                </div>
-            </div>
-            <p class="content">
-            For this project, I conducted early research in a two-part ethnographic research study. The user test was done in multiple segments to test the different aspects and parts of the Lynx app. The first user test was conducted while snowshoeing and the second user test while skiing to duplicate the experience of the targeted audience. The first segment of the test was to have the users go about the experience as they normally would then interview them based upon that experience. The second segment of the test was to have a speaker playing music for the group then interview them on that portion. The next section was to imitate the experience of the app by creating a collaborative Spotify playlist and to sync the music by playing it from the beginning. The final step was to show them the prototype and talk them through the options and the likelihood that they would use each of the features. Other things tested for were pain points throughout each of the processes.<br><br><!-- <a href="Lynx/LynxSynthesisReport.pdf" style="color: grey">Lynx Synthesis Report Link</a> --></p>
-            <p class="title">Interview Takeaways</p>
-            <p class="content">During the two-phased study while snowshoeing and skiing with users, we conducted multiple aspects of the user experience. The first was an observation of the current systems the user used while doing the activities, a speaker used to share music collectively, test current apps on the market such as Spotify, and finally test the current Lynx Prototype. We conducted interviews with <b>six participants</b> to understand their perspectives on each of these systems and the proposed solution. <br><br>During this research, I found that most people thought that a collaborative music experience would heighten the activities tested and that the current market was not meeting this demand.<br><br> </p>
-            <div class="quotes">
-                <div class="quotescolumn">
-                <q>I have tried to sync music with groups in the past while skiing and haven’t been able to</q><br><br>-Sammi, 23</div>
-                <div class="quotescolumn">
-                <q>I hate using speakers when hiking or outdoors as I don’t want to be that douchebag who forces everyone to listen to my type of music if they are trying to enjoy the outdoors</q><br><br>-Gabby, 24</div>
-                <div class="quotescolumn">
-                <q>I would definitely use this while at the gym, skiing or hiking</q><br><br>-Bryce, 23</div>
+	<div id="nav-placeholder"></div>
+	<div id="header">
+	        <header>
+	        	<a href="index.html">
+	        		<div class="flexbox">
+			    		<img src="img/portfolioBracket.png" alt="logo" id="headerlogo">
+			    		<div id="headertext">
+			    			<h1>Cassandra Goodby</h1>
+			    			<h2>Designer <span class="ampersand">&</span> Developer</h2>
+			    		</div>
+		    		</div>
+	    		</a>
+	        </header>
+	</div>
 
-            </div>
-            <p class="title">Pain points</p>
-            <p class="content">
-                <ul>
-                    <li>“I want to be able to listen to music with my friends without being disruptive with a speaker”</li>
-                    <li>“When my friends and I listen to the same playlist we always get off sync and want to be able to listen to the music together”</li>
-                    <li>“My phone always freezes and it’s difficult to change a song with gloves”</li>
-                    <li>“I can’t communicate with my friends and we always get separated”</li>
-                    <li>“My phone dies to quickly"</li>
-                </ul>
-                <br>
-            </p>
-            <p class="content">This research led the design process on focusing on the areas users thought was most beneficial to the user's experiences such as the collaborative playlist curation <b>(create)</b>, sync and solo mode <b>(connect)</b> and the walkie talkie feature and chat function <b>(communicate)</b>. Each of these sections will be explored more below. </p>
-            <p class="title">Storyboard</p>
-            <img src="img/Lynx/LynxStoryboard.jpg" alt="Lynx Storyboard" id="storyboard">
-            <p class="content">This storyboard was created to visually predict the user scenario in which they would use this app. Being focused on outdoor adventure activities such as skiing, hiking, biking and more, design decisions such as when they have access to their phone, understanding the flow of the interaction and how the impact of such an application might have on their experience. </p>
-            <p class="title">Personas</p>
-            <img src="img/Lynx/lynxpersonas.gif" alt="Lynx Personas" id="personas">
-            <p class="content">Since this application is highly dependent on the activity for outdoor adventurous activities, I decided to take an alternative approach to the typical user personas. Focusing on the narrative of when and how the user is using this app led to many of the design decisions. </p>
-            <p class="title">Wireframe Prototype</p>
-            <a href="https://invis.io/GPR37LOC5VX" target="_blank" style="color: grey">InVision Link</a>
-            <iframe transform="" width="494" height="1010" src="https://invis.io/GPR37LOC5VX" frameborder="0" allowfullscreen></iframe>
-            <p class="titlebig">Design</p>
-            
-            <div class="gifs">
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Create1.gif" alt="Create Gif">
-                </div>
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Create2.gif" alt="Create Gif">
-                </div>
-            </div>
-            <p class="title">Create</p>
+	<div class="header lynxyellowbg" id="lynxheader">
+		<img src="img/lynx/LynxLogo.png" alt="Lynx Logo" class="toplogo">
+		<h3>LYNX</h3>
+		<img src="img/lynx/LynxHero.png" alt="Lynx Header" class="hero">
+	</div>
+
+	<div class="overview">
+		<div class="tagline">
+			<h4>Experience music together</h4>
+			<p>Lynx is a collaborative music sharing experience that integrates collaborative playlist creation, in sync real-time experience, and walkie talkie chat function.</p>
+		</div>
+		<div class="details">
+			<div class="context third">
+				<p class="thirdtext">Context</p>
+				<p class="thirdsub">Graduate Project-Individual</p>
+			</div>
+			<div class="tools third">
+				<p class="thirdtext">Tools</p>
+				<p class="thirdsub">Sketch, Principle, Photoshop, Illustrator, After Effects</p>
+			</div>
+			<div class="timeline third">
+				<p class="thirdtext">Timeline</p>
+				<p class="thirdsub">January-May 2019</p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="lynxyellowbg">
+		<div class="problem centeredSec">
+			<p class="sectionhead">Problem</p>
+			<p>Music apps typically curate music experiences towards the single user but fail to focus on the users. Music can curate a collaborative experience and is often missed through Spotify, Apple Music, Pandora and popular music streaming services.<br><br>
+
+			<b>Goal:</b> To create an application that allows users to experience music together. To allow users to have a group speaker experience with friends through their individual headphones.<br><br>
+
+			<b>Solution:</b> Lynx is a collaborative music sharing experience that integrates collaborative playlist creation, in sync real-time experience and walkie talkie chat communication function.</p>
+		</div>
+		
+	</div>
+
+	<div class="sectionwide">
+		<div class="flex">
+			<img src="img/lynx/research1.png" alt="Skiing Research Photo" class="researchimg">
+			<img src="img/lynx/research2.png" alt="Snowshoeing Research Photo" class="researchimg">
+
+			<p id="researchtext"> <span class="sectionhead">Research</span> <br><br>For this project, I conducted a two-part ethnographic research study. The user test was done in multiple segments to test the different aspects and parts of the Lynx app. The first user test was conducted while snowshoeing and the second user test while skiing to duplicate the experience of the targeted audience.The first segment of the test was to have the users go about the experience as they normally would then interview them based upon that experience. The second segment of the test was to have a speaker playing music for the group then interview them on that portion. The next section was to imitate the experience of the app by creating a collaborative Spotify playlist and to sync the music by playing it from the beginning. The final step was to show them the prototype and talk them through the options and the likelihood that they would use each of the features.</p>
+		</div>
+	</div>
+
+	<div class="grey">
+		<div class="sectionwide">
+			<p class="sectionhead">Takeaways</p>
+
+			<div class="flex">
+				<div class="quote">
+					<div class="flextop">
+						<img src="img/lynx/quote.svg" alt="Quote" class="quotation">
+						<p class="quotetext">I have tried to sync music with groups in the past while skiing and haven’t been able to.</p>
+					</div>
+				</div>
+				<div class="quote">
+					<div class="flextop">
+						<img src="img/lynx/quote.svg" alt="Quote" class="quotation">
+						<p class="quotetext">I hate using speakers when hiking or outdoors as I don’t want to be that douchebag who forces everyone to listen to my type of music if they are trying to enjoy the outdoors.</p>
+					</div>
+				</div>
+				<div class="quote">
+					<div class="flextop">
+						<img src="img/lynx/quote.svg" alt="Quote" class="quotation">
+						<p class="quotetext">I would definitely use this while at the gym, skiing or hiking.</p>
+					</div>
+				</div>
+			</div>
+			<p id="takeawaytext">During the two-phased study while snowshoeing and skiing with users, we conducted multiple aspects of the user experience. The first was an observation of the current systems the user used while doing the activities, a speaker used to share music collectively, test current apps on the market such as Spotify, and finally test the current Lynx Prototype. We conducted interviews with <b>six participants</b> to understand their perspectives on each of these systems and the proposed solution.<br><br>During this research, I found that most people thought that a collaborative music experience would heighten the activities tested and that the current market was not meeting this demand.</p>
+			
+		</div>
+	</div>
+	<div class="lynxyellowbg">
+		<div class="painpoint centeredSec">
+		<p><b>Pain points</b><br>
+				<ul>
+				<li>“I want to be able to listen to music with my friends without being disruptive with a speaker”</li>
+				<li>“When my friends and I listen to the same playlist we always get off sync and want to be able to listen to the music together”</li>
+				<li>“My phone always freezes and it’s difficult to change a song with gloves”</li>
+				<li>“I can’t communicate with my friends and we always get separated”</li>
+				<li>“My phone dies to quickly"</li></ul>
+				<br></p>
+	</div>
+	</div>
+	
+	<div class="sectionwide">
+		<div class="flextop">
+			<div class="leftalign"><p class="sectionhead">Storyboard</p></div>
+			<div class="rightalignedimg">
+				<img src="img/lynx/storyboard.png" alt="Lynx Storyboard">
+				<p class="storyboardtext imagesubtext">This storyboard was created to visually predict the user scenario in which they would use this app. Being focused on outdoor adventure activities such as skiing, hiking, biking and more, design decisions such as when they have access to their phone, understanding the flow of the interaction and how the impact of such an application might have on their experience.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="grey">
+		<div class="sectionwide">
+			<div class="flextop">
+				<div class="leftalign">
+				<p class="sectionhead">Our Users</p></div>
+				<div class="rightalignedimg">
+					<img src="img/lynx/lynxpersonas.gif" alt="Lynx personas gif">
+					<p class="usertext imagesubtext">Since this application is highly dependent on the activity for outdoor adventurous activities, I decided to take an alternative approach to the typical user personas. Focusing on the narrative of when and how the user is using this app led to many of the design decisions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sectionwide">
+		<div class="flex logodesign">
+			<div class="logosec">
+				<p class="sectionhead">Wordmark</p> 
+				<img src="img/lynx/LynxWordmark1.png" alt="Lynx Wordmark" id="wordmark">
+				<p>Customized font adapted from Air Americana font. This is a retro uppercase only italicized sans serif font designed in 2014 inspired by the Air Amerca Logo. The X is custom made to symbolize the links and connections the users have through the shared collaboration element of the app. </p>
+			</div>
+			<div class="logosec">
+				<p class="sectionhead">App Logo</p>
+				<img src="img/lynx/LynxLogo1.png" alt="Lynx app icon" id="applogo">
+				<p>The app logo plays off the wordmarks “X” symbolizing the links as a representation of chain links. </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="lowfisec">
+		<p class="sectionhead" id="lowHeader">Low fidelity</p> 
+		<p class="link"  id="lowlink"><a href="https://invis.io/GPR37LOC5VX" target="_blank">InVision Prototype Link</a></p>
+	</div>
+
+	<div class="lynxyellowbg lofiyellow">
+		<img src="img/lynx/LynxLofi.png" alt="Low fidelity mockup of the app" id="lynxlofi">
+	</div>
+
+	<div class="sectionwide">
+		<p class="sectionhead">Design Considerations</p>
+			<p>This research led the design process on focusing on the areas users thought was most beneficial to the user's experiences such as the collaborative playlist curation (create), sync and solo mode (connect) and the walkie talkie feature and chat function (communicate).</p>
+		 <p class="title"><b>Create</b></p>
             <p class="content">One of the key takeaways from users was their desire for the ability to use this app without having to buy another music service. Based upon this research Lynx connects your current music apps to be able to collaboratively create playlists. In real-time, the user can create a playlist with their friends that share the music they love. Using this also allows the phone to download content before the activity to limit the data usage needed and save battery life, both pain points for the user. </p>
-            
-            <div class="gifs">
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Connect1.gif" alt="Create Gif">
-                </div>
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Connect2.png" alt="Create Gif">
-                </div>
-            </div>
-            <p class="title">Connect</p>
+             <p class="title"><b>Connect</b></p>
             <p class="content">For Lynx, the main feature is the Connect feature. This feature is the main experience that brings the speaker experience to the group through their individual headphones. Users can choose between Sync and Solo mode. Sync mode is through Bluetooth, cellular and wifi when available that keeps the user on the same music in real-time. Using the curated playlist from the group this feature allows everyone to have the shared collaborative music experience.  <br><br>
 
-But in case of a user desiring to stay on the group playlist but can to customize what songs they are listening to when they have the option through the solo mode while still experiencing the music the group is, just at their own pace.<br><br>Navigation focused on swiping to allow easy access with limited attention to detail. See all important information quickly with one swipe.
-</p>
-            
-            <div class="gifs">
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Communicate1.gif" alt="Create Gif">
-                </div>
-                <div class="gifscolumn">
-                    <img src="img/Lynx/Communicate2.gif" alt="Create Gif">
-                </div>
-            </div>
-            <p class="title">Communicate</p>
+			But in case of a user desiring to stay on the group playlist but can to customize what songs they are listening to when they have the option through the solo mode while still experiencing the music the group is, just at their own pace.<br><br>Navigation focused on swiping to allow easy access with limited attention to detail. See all important information quickly with one swipe.
+			</p>
+			 <p class="title"><b>Communicate</b></p>
             <p class="content">The final feature implemented based on user research is the communication tool. This tool has the Walkie talkie and chat function. When you slide to the left you are greeted with the chat feature to use voice notes or text, limiting the need for taking off your gloves or having it interfere with your activity. These features would also work with headphones to provide an even easier way for the user to be able to communicate. The user can choose to allow each voice memo to automatically pause their music and play the message through their headphones or mute these features to not interfere with their experience. While on mute the voice memos and chats are saved for when you want to catch up on the information your group has shared.</p>
-            <img src="img/Lynx/EndSlide.jpg" alt="End Slide for Lynx" id="endLync">
+	</div>
 
-        </div>
-    </div>
-    	
-	    
-    </div>
+	<div class="grey">
+		<div class="phonehover">
+			<div class="leftsec column">
+				
+				<div class="hoverbutton first" id="create">
+					<p class="buttonhead">Create</p>
+					<p class="buttonexp">Log into your current music apps to get access to the music you already love.</p>
+					<img src="img/lynx/appimages.png" alt="Music applications">
+					<img src="img/lynx/gifs/Create1Fixed.gif" alt="Phone mockup showing create feature" class="smallimagesview">
+				</div>
+				
+				
+				<div class="hoverbutton second nothover" id="create2">
+					<p class="buttonhead ">Connect</p>
+					<p class="buttonexp">Listen with your friends in sync or solo mode! Sync will keep your connected through Bluetooth, wifi or cellular to enjoy the same songs as your friends.</p>
+					<img src="img/lynx/sync.png" alt="Sync and solo mode icon">
+					<img src="img/lynx/gifs/Connect1Fixed.gif" alt="Phone mockup showing connect feature" class="smallimagesview">
+				</div>
+				
+	
+			</div>
 
-    <footer>
-        <div id="icons">
-            <a href="https://github.com/cassandragoodby" target="_blank">
-            <i class="fab fa-github fa-2x foot"></i></a>
-            <a href="https://www.linkedin.com/in/cassandragoodby/" target="_blank"><i class="fab fa-linkedin-in fa-2x foot" ></i></a>
-            <a href="mailto:cassandragoodby@gmail.com"><i class="fas fa-envelope fa-2x foot" ></i></a>
-            <a href="https://dribbble.com/cassandragoodby" target="_blank"><i class="fab fa-dribbble fa-2x foot"></i></a>
-            <!-- <a href="https://www.instagram.com/cgoodesigns/" target="_blank"><i class="fab fa-instagram fa-2x foot"></i></a> -->
-        </div>
-    </footer>
+			<div class="middlesec column">
+				<img src="img/lynx/gifs/Create1Fixed.gif" alt="Gif showing possible application views" id="lynxphonegif">
+				<!-- Create1, create 2, Connect1, communicate1 -->
+				
+			</div>
+			
+			<div class="rightsec column">
+				
+				<div class="hoverbutton third nothover" id="connect">
+					<p class="buttonhead">Create</p>
+					<p class="buttonexp">In real-time playlist creation with your friends. Everyone can add to the playlist.</p>
+					<img src="img/lynx/playlistcreate.png" alt="Playlist Notification">
+					<img src="img/lynx/gifs/Create2Fixed.gif" alt="Phone mockup showing create feature" class="smallimagesview">
+				</div>
+				
+
+				<div class="hoverbutton fourth nothover" id="communicate">
+					<p class="buttonhead">Communcate</p>
+					<p class="buttonexp">Walkie Talkie and chat screen to keep up with your friends. Mute, unmute and auto-pause giving you control of how you listen. </p>
+					<img src="img/lynx/Notification.png" alt="Chat Notification">
+					<img src="img/lynx/gifs/Communicate1Fixed.gif" alt="Phone mockup showing communicate feature" class="smallimagesview">
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="endimage">
+		<img src="img/lynx/endImage.png" alt="Lynx Final Image">
+	</div>
+
+	<div id="footer-placeholder"></div>
+	
 </body>
+
+<script src="js/app.js"></script>
+
 </html>

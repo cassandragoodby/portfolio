@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="212px" viewBox="0 0 213 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5-MoodIQ" transform="translate(-994.000000, -4257.000000)">
+            <g id="Group-9" transform="translate(381.000000, 3961.000000)">
+                <g id="Group-17" transform="translate(579.000000, 261.000000)">
+                    <circle id="Oval" stroke-opacity="0.15" stroke="#E75902" stroke-width="11" cx="140" cy="141.283481" r="100"></circle>
+                    <text id="35.1%" font-family="CircularStd-Black, Circular Std" font-size="43" font-weight="700" fill="#E75902">
+                        <tspan x="82.02" y="157.283481">35.1%</tspan>
+                    </text>
+                    <path d="M141.227543,241 C196.456018,241 241.227543,196.228475 241.227543,141 C241.227543,85.771525 196.456018,41 141.227543,41 C85.9990682,41 41.2275432,85.771525 41.2275432,141 C41.2275432,196.228475 85.9990682,241 141.227543,241 Z" id="Oval" stroke="#E75902" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="220.43,407.57" transform="translate(141.227543, 141.000000) rotate(-51.000000) translate(-141.227543, -141.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

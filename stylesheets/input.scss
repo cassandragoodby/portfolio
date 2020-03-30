@@ -1,0 +1,1054 @@
+$primary : #434433;
+$yellow : #faec52;
+$Navgrey : #5d5d5d;
+$black : #000000;
+$white : #ffffff;
+$lynxyellow: #FBCF00;
+$podysseyblue: #CEE5FF;
+$nistblue: #3475AB;
+$moodiqorange: #F09E13;
+$bggrey: #F3F3F3;
+$podysseysecondary: #54606E;
+$podysseythird: #8596F7;
+$jobsblue: #0061BA;
+$jobsgreen: #156301;
+$jobspink: #B602A5;
+
+@font-face {
+  font-family: raleway;
+  src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: abril fatface;
+  src: url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
+  font-weight: bold;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/*                              BEGIN NAV                              */
+
+
+nav{
+	padding: 20px;
+	text-align: right;
+	font-family: "raleway", serif;
+	font-weight: 700;
+	font-size: 15px;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+}
+
+#nav-placeholder nav a{
+	color: $Navgrey;
+	text-decoration: none;
+	padding: 15px;
+
+}
+
+// #nav-placeholder nav a:hover{
+// 	color: $yellow;
+// 	text-decoration: underline;
+// }
+
+#nav-placeholder nav a.active{
+	color: $black;
+	text-decoration: underline;
+}
+
+/*                              END NAV                              */
+
+
+
+/*                              BEGIN HEADER                              */
+
+#header{
+	text-align: center;
+	padding: 20px;
+}
+
+header img{
+	max-width: 77px;
+}
+
+h1{
+	font-family: "raleway", serif;
+	font-weight: 700;
+	font-size: 30px;
+	margin: 5px;
+}
+
+h2{
+	font-family: "roboto", serif;
+	font-weight: 300;
+	font-size: 25px;
+	text-align: left;
+	margin: 5px;
+}
+
+h2 span{
+	font-family: "abril fatface", serif;
+}
+
+#header a{
+	text-decoration: none;
+	font-size: 15px;
+	color: $black;
+	text-transform: uppercase;
+} 
+
+a{
+	color: $black;
+}
+
+#headertext{
+	padding-left: 10px;
+}
+
+.flexbox{
+	display: flex;
+	align-items: center;
+  	// justify-content: center;
+}
+
+
+
+/*                              END HEADER                              */
+
+/*                              BEGIN ABOUT                              */
+
+.aboutmain{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	max-width: 920px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.aboutleft{
+	width: 60%;
+	padding: 10px;
+}
+
+.aboutright{
+	width: 30%;
+}
+
+.aboutright img{
+	width: 100%;
+	padding: 10px;
+}
+
+h3{
+	font-family: "raleway", serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.maintext{
+	font-family: "roboto", serif;
+	font-size: 15px;
+}
+
+.social{
+	padding-top: 10px;
+}
+
+ul{
+	list-style-type: none;
+	font-family: "roboto", serif;
+	font-weight: 700;
+	padding: 0;
+}
+
+ul li{
+	text-decoration: underline;
+	display: inline-block;
+}
+
+ul a{
+	color: $black;
+}
+
+/*                              END ABOUT                              */
+
+/*                              BEGIN RESPONSIVE                              */
+
+@media only screen and (max-width: 600px) {
+	// HEADER
+	#header img{
+		max-width: 50px;
+	}
+
+	h1{
+		font-size: 20px;
+	}
+
+	h2{
+		font-size: 15px;
+	}
+
+	#headertext{
+		padding-left: 5px;
+	}
+
+	// NAV
+	nav{
+		font-size: 12px;
+		padding: 25px 15px;
+	}
+
+
+	// ABOUT
+
+	.aboutmain{
+		display: inline-block;
+		// align-items: center;
+	  	// justify-content: center;
+	}
+	.aboutleft{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.aboutright{
+		width: 50%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.aboutright img{
+		padding: 0px;
+	}
+
+}
+
+/*                              END RESPONSIVE                              */
+
+body{
+	font-family: "roboto", serif;
+	line-height: 1.5;
+}
+
+ .lynxyellowbg{
+ 	background-color: $lynxyellow;
+ 	background-image: url("../img/lynx/LynxBGHead.png");
+    background-size: 100% auto;
+ }
+
+.podysseybluebg{
+ 	background-color: $podysseyblue;
+ 	// background-image: url("../img/lynx/LynxBGHead.png");
+    // background-size: 100% auto;
+ }
+
+ .header{
+ 	text-align: center;
+ }
+
+ h3{
+ 	font-size: 50px;
+ 	margin: 20px;
+ }
+
+ .toplogo{
+ 	width: 80px;
+ }
+
+ .hero{
+ 	width: 50%;
+ 	margin: 0;
+ 	vertical-align: bottom;
+ }
+
+ .tagline{
+ 	width: 40%;
+ 	margin-left: 50%;
+ 	transform: translateX(-50%);
+ 	// align-content: center;
+ }
+
+ h4{
+ 	font-size: 25px;
+ 	margin: 50px 0px 15px 0px;
+ }
+
+ .details{
+ 	// display: inline-flex;
+ 	margin-left: 50%;
+ 	transform: translateX(-50%);
+	width: 80%;
+	max-width: 1000px;
+	// align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+ }
+
+.third{
+	padding: 15px;
+}
+
+.thirdtext{
+	color: #878787;
+}
+
+.thirdsub{
+	font-style: italic;
+}
+
+.centeredSec{
+	padding: 25px;
+	width: 60%;
+	max-width: 1000px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.sectionhead{
+	font-size: 25px;
+	min-width: 0;
+	white-space: nowrap;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.researchimg{
+	width: 150px;
+	padding: 10px;
+}
+
+.sectionwide{
+	padding: 25px;
+	width: 80%;
+	max-width: 900px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+}
+
+#researchtext{
+	padding-left: 15px;
+}
+
+.grey{
+	background-color: $bggrey;
+}
+
+.quote{
+	background-color: white;
+	border-radius: 25px;
+  	padding: 20px;
+  	margin: 10px;
+  	flex-grow:1;
+    flex-basis: 0;
+}
+
+.quotation{
+	color: $lynxyellow;
+	margin: 0px;
+	padding: 10px;
+	width: 20px;
+}
+
+.flextop{
+	display: flex;
+	align-items: flex-start;
+}
+
+.flexbottom{
+	display: flex;
+	align-items: flex-end;
+}
+
+.rightalignedimg{
+	width: 100%;
+	text-align: right;
+}
+
+.rightalignedimg img{
+	width: 70%;
+}
+
+.logosec{
+	padding: 50px;
+}
+
+#applogo{
+	width: 70%;
+	max-width: 150px;
+}
+
+#wordmark{
+	width: 70%;
+	max-width: 370px;
+}
+
+.lowfisec{
+	width: 80%;
+	max-width: 1000px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: flex-end;
+}
+
+#lynxlofi{
+	width: 100%;
+	height: auto;
+}
+
+.lowfisec p{
+	margin: 0;
+	padding:0;
+	
+}
+
+#lowHeader, #lowlink{
+	flex: 0 0 50%;
+
+}
+
+#lowlink a{
+	color: $Navgrey;
+}
+
+#lowlink{
+	text-align: right;
+}
+
+.phonehover{
+	margin: 0;
+	padding: 15px;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	margin: 0 auto;
+}
+
+.hoverbutton{
+	background-color: white;
+	border-radius: 25px;
+  	padding: 20px;
+  	margin: 20px;
+}
+
+.buttonhead{
+	margin: 0;
+	font-weight: 700;
+}
+
+.leftsec{
+	text-align: right;
+}
+
+.column{
+	width: 33%;
+	float: right;
+}
+
+.hoverbutton img{
+	width: 100%;
+	max-width: 240px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#lynxphonegif{
+	height: 100%;
+	max-height: 550px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.nothover{
+	opacity: 50%;
+}
+
+.endimage{
+	width: 100%;
+	height: auto;
+	// background-color: $lynxyellow;
+}
+
+.endimage img{
+	width: 100%;
+}
+
+.painpoint ul{
+	list-style-type: disc;
+	font-family: "roboto", serif;
+	font-weight: 500;
+	padding: 0;
+}
+
+
+.painpoint ul li{
+	text-decoration: none;
+	display: list-item;
+	list-style-position: outside;
+}
+
+.painpoint ul a{
+	color: $black;
+}
+
+.imagesubtext{
+	width: 70%;
+	text-align: left;
+	float: right;
+}
+
+
+//MOODIQ
+
+
+.moodiqorangebg{
+ 	background-color: $moodiqorange;
+ 	// background-image: url("../img/lynx/LynxBGHead.png");
+    // background-size: 100% auto;
+ }
+
+ .quoteimg{
+ 	width: 100%;
+ 	z-index: 0;
+ 	max-width: 900px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .quoteimg img{
+ 	position: absolute;
+ 	width: 100%;
+ }
+
+ .quoteiq{
+ 	width: 70%;
+ 	max-width: 800px;
+ 	background-color: white;
+	border-radius: 25px;
+  	padding: 20px;
+  	margin: 10px;
+  	text-align: center;
+  	margin-left: 50%;
+  	transform: translateX(-50%);
+ }
+
+ .hmw img{
+ 	width: 50%;
+ 	padding: 10px;
+ }
+
+
+
+
+// START FOOTER
+
+footer{
+	margin: 0;
+	padding: 0;
+}
+
+.nextprojects{
+	display: flex;
+}
+
+.nextprojects div img{
+	width: 100%;
+}
+
+.nextprojects div{
+	width: 34%;
+	height: auto;
+	// background-color: $Navgrey;
+	
+}
+
+.builtby{
+	padding: 25px;
+	align-content: center;
+	text-align: center;
+	font-family: "roboto", serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.footer1 span{
+	font-family: "abril fatface", serif;
+}
+
+.footer1{
+	font-size: 25px;
+	margin: 0;
+}
+
+.footer2{
+	font-size: 20px;
+	margin: 0;
+}
+
+#footerlogo{
+	width: 40px;
+}
+
+
+// END FOOTER
+
+
+
+
+
+// PODYSSEY CHANGES
+
+.topvideo{
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.topvideo iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.researchcolumn{
+	text-align: center;
+}
+
+.researchicon{
+	height: 40px;
+	padding-top: 20px;
+}
+
+.percent{
+	font-size: 50px;
+	font-weight: 800;
+	margin: 5px;
+	color: $podysseythird;
+}
+
+.keynumber{
+	font-size: 50px;
+	font-weight: 800;
+	margin: 10px;
+	color: $podysseythird;
+}
+
+.insight{
+	display: flex;
+	align-items: center;
+}
+
+.blue{
+	color: $jobsblue;
+}
+
+.green{
+	color: $jobsgreen;
+}
+
+.pink{
+	color: $jobspink;
+}
+
+.hmw{
+	width: 50%;
+	text-align: center;
+	font-size: 25px;
+	color: $jobsblue;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 45px;
+}
+
+
+.sectionextrawide{
+	padding: 25px;
+	width: 95%;
+	max-width: 1200px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+}
+
+.rectitle{
+	font-size: 15px;
+	color: $jobsblue;
+	font-weight: 500;
+}
+
+.reccomendations{
+	width: 33%;
+	display: inline-flex;
+	flex-direction: row;
+	// align-items: stretch;
+	font-size: 12px;
+	flex: 1 1 0px;
+	flex-basis: auto;
+	padding: 10px;
+}
+
+.reccomendationsflex{
+	display: flex;
+  	justify-content: center;
+}
+
+.personas{
+	position: relative;
+	width: 100%;
+    // height: 100%;
+    display: inline-block;
+}
+
+#persona1{
+	// margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+}
+
+#persona1, #persona2, #persona3{
+	width: 40%;
+	float: left;
+}
+
+#persona2{
+	z-index: 1;
+	margin-left: 50px;
+}
+
+#persona3{
+	float: right;
+	margin-right: 50px;
+	z-index: 1;
+}
+
+.vidside{
+	width: 45%;
+	padding: 15px;
+}
+
+.finalvid{
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.finalvid iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.podendsec{
+	position: absolute;
+}
+
+#endpod{
+	float: right;
+	z-index: 1;
+	right: 0px;
+	top: 0px;
+	width: 80%;
+	max-width: 800px;
+}
+
+.sectionwidenopadding{
+	width: 100%;
+	max-width: 900px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	padding-left: 25px;
+}
+
+
+//MOODIQ
+.sectionwideforms{
+	width: 100%;
+	max-width: 900px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	padding: 25px 25px 0px 25px;
+
+}
+
+.leftalign{
+	width: 30%;
+}
+
+.stat{
+	padding: 10px;
+	font-weight: 800;
+	width: 50%;
+}
+
+.stat img{
+	width: 100%;
+	max-width: 150px;
+	margin-left: 0px;
+}
+
+.statp{
+	padding: 10px;
+}
+
+.flexiq{
+	display: flex;
+	align-items: center;
+}
+
+.flexmark{
+	display: flex;
+	justify-content: center;
+}
+
+#applogo2{
+	width: 70%;
+	max-width: 200px;
+}
+
+#wordmark2{
+	width: 70%;
+	max-width: 430px;
+}
+
+
+
+// NIST
+.nistbluebg{
+	background-color: $nistblue;
+}
+
+ .heronist{
+ 	width: 100%;
+ 	margin: 0;
+ 	vertical-align: bottom;
+ }
+
+.subhead{
+ 	font-style: italic;
+ }
+
+#nistarimg{
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.largealignnist{
+	width: 75%;
+}
+
+.storebtn{
+	width: 80%;
+	float: right;
+	padding: 20px;
+}
+
+.smallalignnist{
+	width: 45%;
+	padding: 15px;
+}
+
+.researchsec img{
+	width: 50%;
+	padding: 5px;
+}
+
+.vrsec img{
+	width: 80%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 5px;
+}
+
+.slideshow{
+	position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 3;
+  
+}
+
+
+.prev{
+	left: 10%;
+}
+
+.next {
+  right: 10%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.nistvideo{
+	overflow: hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.nistvideo iframe{
+	left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.caption{
+	font-size: 12px;
+	color: $Navgrey;
+	text-align: center;
+	margin: 0px auto 10px auto;
+}
+
+.smallalignnistnopad{
+	width: 45%;
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 1000px) {
+	.tagline{
+		width: 60%;
+	}
+
+	.details{
+			display: inline-block;
+			text-align: center;
+		}
+}
+@media only screen and (max-width: 700px) {
+	.sectionwide, .centeredSec, .sectionwideforms{
+		width: 90%;
+	}
+
+	.tagline{
+		width: 80%;
+	}
+
+	.details{
+			text-align: left;
+		}
+
+	.details, .flex, .flextop, .phonehover, .reccomendationsflex, .flexmark{
+		display: inline-block;
+	}
+
+	.reccomendations{
+		width: 100%;
+	}
+	
+	.rightalignedimg{
+		text-align: center;
+	}
+
+	.imagesubtext{
+		width: 90%;
+		float: left;
+	}
+
+	.logosec{
+		padding: 5px;
+	}
+
+	.column{
+		width: 100%;
+	}
+
+	.leftsec{
+		text-align: right;
+	}
+
+	#persona1, #persona2, #persona3{
+		width: 80%;
+		float: none;
+
+	}
+
+	#persona1{
+		// margin-left: 50%;
+		// transform: translateX(-50%);
+		z-index: 3;
+		position: relative;
+		// float: left;
+	}
+
+	#persona2{
+		z-index: 1;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#persona3{
+		// float: left;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.vidside{
+		width: 100%;
+		text-align: center;
+		margin-left: 50%;
+		transform: translateX(-25%);
+	}
+
+	.stat{
+		width: 100%;
+	}
+
+	.hmw img{
+	 	width: 70%;
+	 }
+	
+	.smallalignnist,.smallalignnistnopad, .largealignnist{
+		width: 90%;
+	}
+}
+

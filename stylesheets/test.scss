@@ -1,0 +1,151 @@
+$primary : #434433;
+$yellow : #faec52;
+$Navgrey : #5d5d5d;
+$black : #000000;
+$white : #ffffff;
+$lynxyellow: #FBCF00;
+$podysseyblue: #CEE5FF;
+$nistblue: #3475AB;
+$moodiqorange: #F09E13;
+
+@font-face {
+  font-family: raleway;
+  src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: abril fatface;
+  src: url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
+  font-weight: bold;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/*                              BEGIN NAV                              */
+
+
+nav{
+	padding: 20px;
+	text-align: right;
+	font-family: "raleway", serif;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+#nav-placeholder nav a{
+	color: $Navgrey;
+	text-decoration: none;
+	padding: 15px;
+
+}
+
+// #nav-placeholder nav a:hover{
+// 	color: $yellow;
+// 	text-decoration: underline;
+// }
+
+#nav-placeholder nav a.active{
+	color: $black;
+	text-decoration: underline;
+}
+
+/*                              END NAV                              */
+
+
+
+/*                              BEGIN HEADER                              */
+
+#header{
+	text-align: center;
+}
+
+header img{
+	max-width: 77px;
+}
+
+h1{
+	font-family: "raleway", serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+h2{
+	font-family: "roboto", serif;
+	font-weight: 300;
+	font-size: 25px;
+}
+
+h2 span{
+	font-family: "abril fatface", serif;
+}
+
+#header a{
+	text-decoration: none;
+	font-size: 15px;
+	color: $black;
+	text-transform: uppercase;
+} 
+
+
+
+/*                              END HEADER                              */
+
+
+/*                              BEGIN MAIN BUTTONS                              */
+
+.fullrow{
+	margin-left: 50%;
+    overflow:hidden; 
+    width: 100%;
+    max-width: 1200px;
+    transform: translateX(-50%);
+
+}
+
+.half{
+	width: 50%;
+	// height: 50vh;
+	float: left;
+}
+
+.half img{
+	width: 100%;
+}
+
+#lynx{
+	background-color: $lynxyellow;
+}
+
+#podyssey{
+	background-color: $podysseyblue;
+}
+
+#nist{
+	background-color: $nistblue;
+}
+
+#moodiq{
+	background-color: $moodiqorange;
+}
+/*                              END MAIN BUTTONS                              */
+
+/*                              BEGIN RESPONSIVE                              */
+@media only screen and (max-width: 700px) {
+	.half{
+		float:none;
+		width: 100%;
+	}
+}
+
+/*                              END RESPONSIVE                              */
+

@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129650699-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-129650699-1');
-    </script>
-    <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cassandra Goodby</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto:300,400,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/animations.css">
-    <script src="js/home.js"></script>
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon.png">
+    <title>Cassandra Goodby Portfolio</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/test.css">
+
+    <!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
     <link rel="manifest" href="img/favicon//site.webmanifest">
@@ -26,106 +16,53 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+
 </head>
 <body>
-    <a href="index.html">
-        <header>
-    		<img src="img/portfolioBracket.png" alt="logo" id="headerlogo">
-    		<div id="headertext">
-    			<h1>Cassandra Goodby</h1>
-    			<h2>Designer & Developer</h2>
-    		</div>
-        </header>
-    </a>
-    <div id="hamburgermenu">
-        <input type="checkbox" id="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-    </div>
-    
-    <nav>
-    	<a href="index.html">Work</a>
-  		<a href="about.html">About</a>
-        <a href="additionalWork.html">Additional Work</a>
-  		<!-- <a href="resume.html">Resume</a> -->
-    </nav>
-    <div id="body">
-    	<div class="workhead">
-    		<h3>Work</h3>
-    	</div>
-        
-        <div class="contentleft" id="work1">
-            <a href="lynx.html">
-                <img src="img/lynx.png" alt="Project 1 Img" class="projectimgleft" id="proj1img">
-                <p class="worktitle proj1text">Lynx</p>
-                <p class="worksubtitle proj1text">Experience Music Together</p>
-                <p class="workclasses proj1text">Prototyping |  User Research</p>
-                </a>
-        </div>
-
-    	
-    	<div class="content" id="work2">
-    		<a href="befit.html">
-                <img src="img/befit.png" alt="Project 2 Img" class="projectimgright" id="proj2img">
-	    		<p class="worktitle proj2text">Be Fit Bingo</p>
-	    		<p class="worksubtitle proj2text">A Fitness App</p>
-	    		<p class="workclasses proj2text">Flutter | Research</p>
+	<div id="nav-placeholder"></div>
+	<div id="header">
+	        <header>
+	        	<a href="index.html">
+	    		<img src="img/portfolioBracket.png" alt="logo" id="headerlogo">
+	    		<div id="headertext">
+	    			<h1>Cassandra Goodby</h1>
+	    			<h2>Designer <span class="ampersand">&</span> Developer</h2>
+	    		</div>
 	    		</a>
-    	</div>
+	        </header>
+	</div>
 
-        <!-- <div class="contentleft" id="work5">
-            <a href="befit.html">
-                <img src="img/nistar.png" alt="Project 5 Img" class="projectimgleft" id="proj5img">
-                <p class="worktitle proj5text">NIST AR/VR</p>
-                <p class="worksubtitle proj5text">Public Safety Augmented and Virtual Reality</p>
-                <p class="workclasses proj5text">Augmented Reality | User Interface<br>Virtual Reality | User Experience</p>
-                </a>
-        </div> -->
+	<div class="main">
+		<div class="fullrow">
+			<a href="lynx.html" alt="Link to Lynx Project">
+				<div class="half" id="lynx">
+					<img src="img/Lynx.png" alt="Music Mobile application Lynx Project">
+				</div>
+			</a>
+			<a href="podyssey.html" alt="Link to Podyssey Project">
+				<div class="half" id="podyssey">
+					<img src="img/Podyssey.png" alt="Travel Mobile application Podyssey Project">
+				</div>
+			</a>
+		</div>
+		<div class="fullrow">
+			<a href="nistar.html" alt="Link to NIST Work">
+				<div class="half" id="nist">
+					<img src="img/Nist.png" alt="NIST XR Project">
+				</div>
+			</a>
+			<a href="moodiq.html" alt="Link to MoodIQ Project">
+				<div class="half" id="moodiq">
+					<img src="img/MoodIq.png" alt="MoodIQ Project">
+				</div>
+			</a>
+		</div>
+	</div>
+	
 
-	    
-    	<div class="contentleft" id="work3">
-    		<a href="custime.html">
-                <img src="img/custime.png" alt="Project 3 Img" class="projectimgleft" id="proj3img">
-	    		<p class="worktitle proj3text">Custime</p>
-	    		<p class="worksubtitle proj3text">A customizable timer for HIIT workouts</p>
-	    		<p class="workclasses proj3text">iOS Swift | Android Java</p>
-    		</a>
-    	</div>
-	    
-	    
-    	<div class="content" id="work4">
-    		<a href="nist.html">
-                <img src="img/nist.png" alt="Project 4 Img" class="projectimgright"  id="proj4img">
-	    		<p class="worktitle proj4text">NIST Undergraduate</p>
-	    		<p class="worksubtitle proj4text">PREP Fellow Internship<br>Public Safety Communications<br>Research Division Kiosk</p>
-	    		<p class="workclasses proj4text">Research | Web Development</p>
-    		</a>
-    	</div>
-	    
-    </div>
-
-    <footer>
-        <div id="icons">
-            <a href="https://github.com/cassandragoodby" target="_blank">
-            <i class="fab fa-github fa-2x foot"></i></a>
-            <a href="https://www.linkedin.com/in/cassandragoodby/" target="_blank"><i class="fab fa-linkedin-in fa-2x foot" ></i></a>
-            <a href="mailto:cassandragoodby@gmail.com"><i class="fas fa-envelope fa-2x foot" ></i></a>
-            <a href="https://dribbble.com/cassandragoodby" target="_blank"><i class="fab fa-dribbble fa-2x foot"></i></a>
-            <!-- <a href="https://www.instagram.com/cgoodesigns/" target="_blank"><i class="fab fa-instagram fa-2x foot"></i></a> -->
-        </div>
-    </footer>
-
-    <script>
-        $("input").change(function(){
-            var $input = $( this );
-            if($input.prop( "checked" )){
-                $("nav").css("visibility","visible");
-            }
-            else{
-                $("nav").css("visibility","hidden");
-            }
-        });
-    </script>
 </body>
+
+<script src="js/app.js"></script>
+
 </html>
